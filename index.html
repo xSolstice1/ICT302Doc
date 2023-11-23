@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
         
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Files - Curriculum Info Application</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Curriculum Info Application</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body>
+    <body class="homepage">
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="..">Curriculum Info Application</a>
+                <a class="navbar-brand" href=".">Curriculum Info Application</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -30,17 +30,17 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../about/" class="nav-link">About</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../userguide/" class="nav-link">User-Guide</a>
-                            </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Files</a>
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="userguide/" class="nav-link">User-Guide</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="files/" class="nav-link">Files</a>
                             </li>
                         </ul>
 
@@ -51,12 +51,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../userguide/" class="nav-link">
+                                <a rel="prev" class="nav-link disabled">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="about/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -78,20 +78,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#files" class="nav-link">Files</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#homecontrollercs" class="nav-link">HomeController.cs</a>
+            <li class="nav-item" data-level="2"><a href="#project-description" class="nav-link">Project Description</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#logincontrollercs" class="nav-link">LoginController.cs</a>
+            
+            <li class="nav-item" data-level="2"><a href="#authors" class="nav-link">Authors</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#transactioncontrollercs" class="nav-link">TransactionController.cs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -99,33 +92,24 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="files">Files</h1>
+<h1> Curriculum Info Application <small>for ICT302</small></h1>
+
 <hr class="solid">
 
-<h2 id="homecontrollercs">HomeController.cs</h2>
-<h4 id="import">Import()</h4>
-<p>Description: Runs DeleteIfFileExist() to delete XML files if already exist<br>
-Return Type: IActionResults</p>
-<h4 id="processimport">ProcessImport()</h4>
-<h4 id="readcsvasync">ReadCsvAsync()</h4>
-<h4 id="readexcelasync">ReadExcelAsync()</h4>
-<h4 id="savedatatoxmlasync">SaveDataToXmlAsync()</h4>
-<h4 id="jointables">JoinTables()</h4>
-<h4 id="processxml">ProcessXml()</h4>
-<h4 id="getfilesize">GetFileSize()</h4>
-<h4 id="deleteiffileexist">DeleteIfFileExist()</h4>
-<h4 id="export">Export()</h4>
-<h4 id="index">Index()</h4>
-<h4 id="logout">Logout()</h4>
-<h4 id="signup">Signup()</h4>
-<h4 id="dashboard">Dashboard()</h4>
+<h2 id="project-description">Project Description</h2>
+<p>The project aims to develop an intuitive and user-friendly application that empowers end users, who may not have a technical background, to efficiently combine, filter, group, and manipulate data from CourseLoop reports and other common sources. The application simplifies the data consolidation process, eliminating the need for advanced Excel or Power Query skills. Users can easily create a unified dataset for their specific needs.</p>
+<p>Overall, this application serves as a user-friendly bridge between non-technical end users and complex data manipulation tasks, enabling them to efficiently work with curriculum information and other datasets without the need for advanced software skills.</p>
 <hr class="solid">
 
-<h2 id="logincontrollercs">LoginController.cs</h2>
-<hr class="solid">
-
-<h2 id="transactioncontrollercs">TransactionController.cs</h2>
-<hr class="solid"></div>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><a href="https://github.com/xSolstice1">@xSolstice1</a> [Software Developer]</li>
+<li><a href="https://github.com/Tay-CK">@Tay-CK</a> [Software Developer]</li>
+<li>Muhammad Hafiz Bin Mohd Kassim [Project Manager]</li>
+<li>Kelly Ku [Security Consultant]</li>
+<li>Alexandria Lee [QA Manager]</li>
+<li>Cho Jia Foo [Secretary]</li>
+</ul></div>
             </div>
         </div>
 
@@ -133,14 +117,14 @@ Return Type: IActionResults</p>
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -205,3 +189,8 @@ Return Type: IActionResults</p>
 
     </body>
 </html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-11-23 12:57:32.853130+00:00
+-->

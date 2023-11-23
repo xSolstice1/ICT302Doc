@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>User-Guide - Curriculum Info Application</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">Curriculum Info Application</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">User-Guide</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../files/" class="nav-link">Files</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../about/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../files/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#user-guide" class="nav-link">User Guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#deploying-locally" class="nav-link">Deploying Locally</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#login-screen" class="nav-link">Login Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sign-up-screen" class="nav-link">Sign Up Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#import-screen" class="nav-link">Import Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#merge-screen" class="nav-link">Merge Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#export-screen" class="nav-link">Export Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#admin-guide" class="nav-link">Admin Guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#user-screen" class="nav-link">User Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dashboard-screen" class="nav-link">Dashboard Screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#video-tutorial" class="nav-link">Video Tutorial</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="user-guide">User Guide</h1>
+<hr class="solid">
+
+<h2 id="deploying-locally">Deploying Locally</h2>
+<p>Clone the project</p>
+<pre><code class="language-bash">  git clone https://github.com/xSolstice1/ICT302_Project.git
+</code></pre>
+<p>Go to the project directory</p>
+<pre><code class="language-bash">  cd my-project
+</code></pre>
+<p>Install dependencies</p>
+<pre><code class="language-bash">  https://dotnet.microsoft.com/en-us/download [.NET 6.0]
+</code></pre>
+<p>Start the server</p>
+<pre><code class="language-bash">  dotnet watch run
+</code></pre>
+<hr class="solid">
+
+<h2 id="login-screen"><strong>Login Screen</strong></h2>
+<p><img alt="Login Screen" src="../images/login.png" /></p>
+<h5 id="the-login-screen-is-the-gateway-to-accessing-the-applications-features">The Login Screen is the gateway to accessing the application's features.</h5>
+<h5 id="follow-the-steps-below-to-log-in">Follow the steps below to log in:</h5>
+<p><br/></p>
+<h3 id="1-enter-credentials">1. Enter Credentials:</h3>
+<h5 id="provide-your-registered-email-address-and-password-in-the-designated-fields">Provide your registered email address and password in the designated fields.</h5>
+<p><em><label class="form-label">Email</label></em>
+<input class = "form-control", type="email", placeholder = "Enter your email", required = "required">
+<em><label for="login-password" class="form-label">Password</label></em>
+<input class = "form-control", type="password", placeholder = "Enter your password", required = "required"></p>
+<h3 id="2-submit-the-form">2. Submit the Form:</h3>
+<h5 id="click-the-login-button-to-submit-the-login-form">Click the "Login" button to submit the login form:</h5>
+<p><button type="submit" class="btn btn-primary btn-new">Login</button></p>
+<h3 id="3-error-handling">3. Error Handling:</h3>
+<h5 id="if-theres-an-issue-with-the-provided-credentials-an-error-message-will-be-displayed">If there's an issue with the provided credentials, an error message will be displayed:</h5>
+<div class="alert alert-danger">
+Invalid username or password.
+</div>
+
+<h3 id="4-account-creation">4. Account Creation:</h3>
+<h5 id="if-you-dont-have-an-account-yet-you-can-sign-up-by-clicking-the-link-below-the-login-form">If you don't have an account yet, you can sign up by clicking the link below the login form:</h5>
+<p><em><p>Still don't have an account? <a href="javascript:void(0);" id="toggle-signup">Click here to sign up</a></p></em></p>
+<hr class="solid">
+
+<h2 id="sign-up-screen"><strong>Sign Up Screen</strong></h2>
+<p><img alt="Sign Up Screen" src="../images/signup.png" /></p>
+<h5 id="if-you-have-not-register-your-account-before">If you have not register your account before,</h5>
+<h5 id="follow-the-steps-below-to-sign-up">Follow the steps below to sign up:</h5>
+<p><br/></p>
+<h3 id="1-navigate-to-the-sign-up-screen">1. Navigate to the Sign Up Screen:</h3>
+<h5 id="visit-the-application-and-click-on-the-sign-up-link-on-the-login-screen">Visit the application and click on the "Sign Up" link on the Login Screen.</h5>
+<p><em><p>Still don't have an account? <a href="javascript:void(0);" id="toggle-signup">Click here to sign up</a></p></em></p>
+<h3 id="2-fill-in-registration-details">2. Fill in Registration Details</h3>
+<p><em><label class="form-label">Email</label></em>
+<input class = "form-control", type="email", placeholder = "Enter your email", required = "required">
+<em><label class="form-label">Username</label></em>
+<input class = "form-control", type="text", placeholder = "Enter your username", required = "required">
+<em><label for="login-password" class="form-label">Password</label></em>
+<input class = "form-control", type="password", placeholder = "Enter your password", required = "required"></p>
+<h3 id="3-submit-the-form">3. Submit the Form:</h3>
+<h5 id="click-the-sign-up-button-to-submit-the-sign-up-form">Click the "Sign Up" button to submit the sign up form:</h5>
+<p><button type="submit" class="btn btn-primary btn-new">Sign Up</button></p>
+<h3 id="4-confirmation-messages">4. Confirmation Messages:</h3>
+<h5 id="if-the-account-creation-is-successful-you-will-see-a-success-message">If the account creation is successful, you will see a success message:</h5>
+<div class="alert alert-success">
+Account created.
+</div>
+
+<h3 id="5-error-handling">5. Error Handling:</h3>
+<h5 id="if-theres-an-issue-with-the-provided-credentials-an-error-message-will-be-displayed_1">If there's an issue with the provided credentials, an error message will be displayed:</h5>
+<div class="alert alert-danger">
+Registration failed. Please try again.
+</div>
+
+<h3 id="6-returning-users">6. Returning Users</h3>
+<h5 id="if-you-already-have-an-account-you-can-easily-switch-back-to-the-login-screen">If you already have an account, you can easily switch back to the Login Screen:</h5>
+<p><em><p>Already have an account? <a href="javascript:void(0);" id="toggle-login">Click here to login</a></p></em></p>
+<hr class="solid">
+
+<h2 id="import-screen"><strong>Import Screen</strong></h2>
+<p><img alt="Import Screen" src="../images/import.png" /></p>
+<h5 id="the-import-data-feature-allows-you-to-upload-and-process-csv-xls-or-xlsx-files-to-populate-your-application-with-data">The Import Data feature allows you to upload and process CSV, XLS, or XLSX files to populate your application with data.</h5>
+<p><br/></p>
+<h3 id="1-access-the-import-page">1. Access the Import Page</h3>
+<h5 id="navigate-to-the-import-data-page-by-clicking-on-the-import-option-in-the-application">Navigate to the Import Data page by clicking on the "Import" option in the application.</h5>
+<p><img alt="Import Tab" src="../images/importTab.png" /></p>
+<h3 id="2-upload-files">2. Upload Files</h3>
+<h5 id="i-click-on-the-choose-files-button">I. Click on the "Choose Files" button.</h5>
+<p><img alt="Import Upload button" src="../images/importUpload.png" /></p>
+<h5 id="ii-choose-the-csv-xls-or-xlsx-files-you-want-to-import-you-can-select-up-to-2-files">II. Choose the CSV, XLS, or XLSX files you want to import. You can select up to 2 files.</h5>
+<h5 id="iii-you-may-also-drag-and-drop-your-files-into-the-column">III. You may also drag and drop your files into the column.</h5>
+<h5 id="iv-click-upload-files-to-start-the-import-process">IV. Click "Upload Files" to start the import process.</h5>
+<p><img alt="Import Upload button" src="../images/importUploadFile.png" /></p>
+<h3 id="3-wait-for-processing">3. Wait for Processing</h3>
+<h5 id="the-application-will-process-the-uploaded-files-this-may-take-some-time-depending-on-the-file-size-and-complexity">The application will process the uploaded files. This may take some time depending on the file size and complexity.</h5>
+<p><br/></p>
+<h3 id="4-review-results">4. Review Results</h3>
+<h5 id="i-once-the-import-is-complete-review-the-results">I. Once the import is complete, review the results.</h5>
+<h5 id="ii-if-successful-you-will-see-a-success-message">II. If successful, you will see a success message.</h5>
+<h5 id="iii-if-there-are-errors-an-error-message-will-be-displayed-correct-the-issues-and-try-importing-again">III. If there are errors, an error message will be displayed. Correct the issues and try importing again.</h5>
+<p><br/></p>
+<h3 id="5-proceed-to-merge-optional">5. Proceed to Merge (Optional)</h3>
+<h5 id="i-if-you-have-uploaded-two-files-you-will-be-prompted-to-proceed-to-the-merge-page">I. If you have uploaded two files, you will be prompted to proceed to the "Merge" page.</h5>
+<h5 id="ii-here-you-can-join-the-imported-data-based-on-selected-columns">II. Here, you can join the imported data based on selected columns.</h5>
+<p><img alt="Merge Screen" src="../images/merge.png" /></p>
+<p><em>Supported File Formats</em><br/>
+- CSV (Comma-Separated Values<br/>
+- XLS (Excel 97-2003)<br/>
+- XLSX (Excel 2007 or later)<br/></p>
+<p><em>Important Notes</em><br/>
+- Ensure that your files adhere to the supported file formats.<br/>
+- Application only allowed import max 2 files.<br/>
+- The application may enforce specific rules or constraints during import. Review error messages for guidance.<br/></p>
+<p><em>For additional assistance, contact support or refer to the application documentation.</em></p>
+<hr class="solid">
+
+<h2 id="merge-screen"><strong>Merge Screen</strong></h2>
+<p><img alt="Merge Screen" src="../images/merge.png" /></p>
+<h5 id="the-merge-data-feature-allows-you-to-join-two-xml-files-based-on-specified-columns-and-perform-various-types-of-joins-this-user-guide-provides-step-by-step-instructions-on-using-the-merge-data-functionality">The Merge Data feature allows you to join two XML files based on specified columns and perform various types of joins. This user guide provides step-by-step instructions on using the Merge Data functionality.</h5>
+<p><br/></p>
+<h4 id="prerequisites">Prerequisites</h4>
+<p><em>Before you begin, make sure you have the following:</em><br/>
+- <em>Two XML files to be merged (<code>File 1</code> and <code>File 2</code>).</em><br/>
+- <em>Understanding of the columns you want to join on (<code>Join Key 1</code> and optionally <code>Join Key 2</code>).</em><br/></p>
+<p><br/></p>
+<h3 id="1-selecting-join-keys">1. Selecting Join Keys</h3>
+<p><img alt="Join Key" src="../images/joinKey.png" /></p>
+<h4 id="join-key-1">Join Key 1:</h4>
+<h5 id="choose-a-column-from-file-1-and-file-2-to-serve-as-the-primary-join-key">Choose a column from <code>File 1</code> and <code>File 2</code> to serve as the primary join key.</h5>
+<p><br/></p>
+<h4 id="join-key-2-optional">Join Key 2 (Optional):</h4>
+<h5 id="if-needed-select-additional-columns-from-both-files-for-a-more-complex-join-but-the-join-type-will-be-only-allowed-concatenated-join">If needed, select additional columns from both files for a more complex join. But, the join type will be only allowed concatenated join.</h5>
+<p><img alt="Join Key" src="../images/joinKey2.png" /></p>
+<h3 id="3-choosing-join-type">3: Choosing Join Type</h3>
+<h5 id="select-the-type-of-join-you-want-to-perform">Select the type of join you want to perform:</h5>
+<h6 id="inner-join"><em>Inner Join</em></h6>
+<h6 id="left-join"><em>Left Join</em></h6>
+<h6 id="right-join"><em>Right Join</em></h6>
+<h6 id="full-join"><em>Full Join</em></h6>
+<h6 id="anti-join"><em>Anti Join</em></h6>
+<h6 id="concatenate-join-for-join-key-2-selected"><em>Concatenate Join</em> (For join key 2 selected)</h6>
+<p><br/></p>
+<h3 id="4-merging-data">4: Merging Data</h3>
+<h5 id="-click-the-merge-files-button-to-initiate-the-merge-process">- Click the "Merge Files" button to initiate the merge process.</h5>
+<h5 id="-the-application-will-redirect-to-export-page-to-display-the-merged-data">- The application will redirect to export page to display the merged data.</h5>
+<p><br/></p>
+<p><em>Additional Notes</em><br/>
+- Invalid characters in column names are automatically replaced with underscores (<code>_</code>).<br/>
+- Duplicate element names are resolved by adding numerical suffixes.<br/>
+- The application provides options for various types of joins and concatenation.<br/></p>
+<p><em>Troubleshooting</em><br/>
+If you encounter any issues during the merge process, an error message will be displayed. 
+Please review the error message and ensure that you have followed the instructions correctly.<br/>
+For further assistance, contact the system administrator.<br/></p>
+<hr class="solid">
+
+<h2 id="export-screen">Export Screen</h2>
+<p><img alt="Export screen" src="../images/export.png" /></p>
+<h5 id="the-export-data-feature-allows-you-to-view-and-export-merged-xml-data-to-excel">The Export Data feature allows you to view and export merged XML data to Excel. <br/><br/></h5>
+<h4 id="export-page-overview">Export Page Overview</h4>
+<p><em>The Export page provides the following features:</em><br/>
+<strong>Filter By:</strong> <em>Narrow down the displayed data by entering search criteria for specific columns.</em><br/>
+<strong>Pagination:</strong> <em>Navigate through the data with pagination controls.</em><br/>
+<strong>Export to Excel:</strong> <em>Create an Excel file containing the displayed data.</em><br/></p>
+<h4 id="prerequisites_1">Prerequisites</h4>
+<p><em>Before you begin, ensure you have already performed the data merge using the Merge Data feature.</em><br/></p>
+<p><br/></p>
+<h3 id="1-filter-data-optional">1. Filter Data (Optional)</h3>
+<p><img alt="Export Filter" src="../images/exportFilter.png" /></p>
+<h5 id="-use-the-filter-by-section-to-refine-the-displayed-data">- Use the "Filter By" section to refine the displayed data.</h5>
+<h5 id="-enter-search-criteria-for-specific-columns">- Enter search criteria for specific columns.</h5>
+<h5 id="-click-the-search-f2-button-to-apply-the-filters">- Click the "Search (F2)" button to apply the filters.</h5>
+<h5 id="-click-the-clear-f3-button-to-reset-filters">- Click the "Clear (F3)" button to reset filters.</h5>
+<p><br/></p>
+<h4 id="2-pagination">2. Pagination</h4>
+<p><img alt="Export Pager" src="../images/exportPager.png" /></p>
+<h5 id="-navigate-through-the-pages-using-the-pagination-controls">- Navigate through the pages using the pagination controls.</h5>
+<h5 id="-the-current-page-and-total-pages-are-displayed">- The current page and total pages are displayed.</h5>
+<p><br/></p>
+<h3 id="3-selecting-columns">3: Selecting Columns</h3>
+<p><img alt="Export Select Column" src="../images/exportColumn.png" /></p>
+<h5 id="-by-default-all-columns-are-selected-for-export">- By default, all columns are selected for export.</h5>
+<h5 id="-uncheck-columns-using-the-checkboxes-if-you-want-to-exclude-them-from-the-export">- Uncheck columns using the checkboxes if you want to exclude them from the export.</h5>
+<p><br/></p>
+<h3 id="4-export-to-excel">4: Export to Excel</h3>
+<p><button id="exportButton" class="btn btn-success">Export to Excel</button></p>
+<h5 id="-click-the-export-to-excel-button-to-generate-an-excel-file">- Click the "Export to Excel" button to generate an Excel file.</h5>
+<h5 id="-the-file-will-contain-the-displayed-data-based-on-the-applied-filters-and-selected-columns">- The file will contain the displayed data based on the applied filters and selected columns.</h5>
+<p><br/></p>
+<p><em>Additional Notes</em><br/>
+<strong>File Naming:</strong> The exported file is named "exportedData.xlsx".<br/>
+<strong>Column Selection:</strong> Choose specific columns for export by unchecking the corresponding checkboxes.
+<br/></p>
+<p><em>Troubleshooting</em><br/>
+If you encounter any issues during the merge process, an error message will be displayed. 
+Please review the error message and ensure that you have followed the instructions correctly.<br/>
+For further assistance, contact the system administrator.<br/></p>
+<hr class="solid">
+
+<h1 id="admin-guide">Admin Guide</h1>
+<h2 id="user-screen">User Screen</h2>
+<p><img alt="User screen" src="../images/admin.png" /></p>
+<h5 id="the-admin-management-feature-allows-you-to-view-and-manage-user-accounts-including-setting-or-removing-admin-privileges-and-deleting-user-accounts">The Admin Management feature allows you to view and manage user accounts, including setting or removing admin privileges and deleting user accounts.</h5>
+<p><br/></p>
+<h5 id="the-user-list-page-displays-a-table-with-user-information-including-email-username-password-admin-access-status-and-actions-you-can-perform-on-each-user">The User List page displays a table with user information, including email, username, password, admin access status, and actions you can perform on each user.</h5>
+<p><strong>Email:</strong> User's email address.<br/>
+<strong>Username:</strong> User's username.<br/>
+<strong>Password:</strong> User's password (for display purposes only).<br/>
+<strong>Admin Access:</strong> Indicates whether the user has admin privileges.<br/>
+<strong>Set/Remove Admin:</strong> Button to toggle admin status for each user.<br/>
+<strong>Actions:</strong> Buttons to perform actions such as deleting a user.<br/></p>
+<h4 id="prerequisites_2">Prerequisites</h4>
+<p><em>Before you begin using the Admin Management functionality, ensure you have logged in to the application.</em><br/></p>
+<h3 id="1-viewing-user-information">1. Viewing User Information</h3>
+<p><img alt="User screen" src="../images/adminTable.png" /></p>
+<h5 id="the-table-displays-user-information-including-email-username-password-and-admin-access-status">The table displays user information, including email, username, password, and admin access status.</h5>
+<p><br/></p>
+<h4 id="2-settingremoving-admin-access">2. Setting/Removing Admin Access</h4>
+<h5 id="locate-the-user-for-whom-you-want-to-change-admin-access">Locate the user for whom you want to change admin access.</h5>
+<h5 id="if-the-users-email-is-not-the-currently-logged-in-users-email">If the user's email is not the currently logged-in user's email:</h5>
+<h5 id="click-the-set-admin-button-to-grant-admin-access">Click the "Set Admin" button to grant admin access.</h5>
+<p><button type="submit" class="btn btn-primary btn-sm">Set Admin</button></p>
+<h5 id="click-the-remove-admin-button-to-revoke-admin-access">Click the "Remove Admin" button to revoke admin access.</h5>
+<p><button type="submit" class="btn btn-primary btn-sm">Remove Admin</button>
+<br/></p>
+<h3 id="3-deleting-a-user">3: Deleting a User</h3>
+<p><button type="submit" class="btn btn-danger btn-sm">Delete</button></p>
+<h5 id="locate-the-user-you-want-to-deleteclick-the-delete-button">Locate the user you want to delete,click the "Delete" button.</h5>
+<p><br/></p>
+<p><em>Additional Notes</em><br/>
+<strong>Current User Email:</strong> The email address of the currently logged-in user is not allowed to perform actions on itself.<br/>
+<br/></p>
+<hr class="solid">
+
+<h2 id="dashboard-screen">Dashboard Screen</h2>
+<p><img alt="Dahboard screen" src="../images/dashboard.png" /></p>
+<h5 id="the-dashboard-provides-a-comprehensive-view-of-important-statistics-and-transaction-history-it-includes-visual-representations-such-as-charts-for-import-duration-import-rate-by-file-type-and-user-usage-additionally-it-displays-a-table-containing-detailed-transaction-history">The Dashboard provides a comprehensive view of important statistics and transaction history. It includes visual representations such as charts for import duration, import rate by file type, and user usage. Additionally, it displays a table containing detailed transaction history.</h5>
+<p><br/></p>
+<h3 id="import-duration-matrix">Import Duration Matrix</h3>
+<p><img alt="Dahboard screen" src="../images/importDuration.png" /></p>
+<h5 id="located-in-the-left-column-of-the-dashboard"><em>Located in the left column of the dashboard.</em></h5>
+<h5 id="-represents-the-relationship-between-file-size-and-import-duration">- Represents the relationship between file size and import duration.</h5>
+<h5 id="-each-point-on-the-chart-corresponds-to-a-transaction-showing-the-import-duration-based-on-the-total-file-size">- Each point on the chart corresponds to a transaction, showing the import duration based on the total file size.</h5>
+<p><br/></p>
+<h3 id="import-rate-by-file-type">Import Rate by File Type</h3>
+<p><img alt="Dahboard screen" src="../images/importFileType.png" /></p>
+<h5 id="located-in-the-left-column-of-the-dashboard_1"><em>Located in the left column of the dashboard.</em></h5>
+<h5 id="-represents-the-relationship-between-file-size-and-import-duration_1">- Represents the relationship between file size and import duration.</h5>
+<h5 id="-each-point-on-the-chart-corresponds-to-a-transaction-showing-the-import-duration-based-on-the-total-file-size_1">- Each point on the chart corresponds to a transaction, showing the import duration based on the total file size.</h5>
+<p><br/></p>
+<h3 id="user-usage-bar-chart">User Usage Bar Chart</h3>
+<p><img alt="Dahboard screen" src="../images/userUsage.png" /></p>
+<h5 id="located-in-the-right-column-of-the-dashboard"><em>Located in the right column of the dashboard.</em></h5>
+<h5 id="-displays-the-number-of-transactions-performed-by-each-user">- Displays the number of transactions performed by each user.</h5>
+<h5 id="-each-bar-represents-a-user-and-its-height-indicates-the-transaction-count">- Each bar represents a user, and its height indicates the transaction count.</h5>
+<p><br/></p>
+<h3 id="transaction-history-table">Transaction History Table</h3>
+<p><img alt="Dahboard screen" src="../images/transaction.png" /></p>
+<h5 id="located-below-the-charts"><em>Located below the charts.</em></h5>
+<h5 id="-presents-a-detailed-history-of-transactions">- Presents a detailed history of transactions.</h5>
+<h5 id="-includes-information-such-as-datetime-user-import-startend-time-filenames-file-sizes-merged-file-size-process-duration-and-join-keys">- Includes information such as date/time, user, import start/end time, filenames, file sizes, merged file size, process duration, and join keys.</h5>
+<p><br/></p>
+<p><em>Additional Notes</em><br/>
+<strong>Automated Transaction Cleanup:</strong> Old transactions are automatically deleted to maintain data relevance, and his cleanup is performed upon accessing the Dashboard.<br/>
+<strong>Interactive Charts:</strong> Charts are interactive and respond to user actions. Hover over points or segments to view additional information. <br/>
+<br/></p>
+<hr class="solid">
+
+<h1 id="video-tutorial">Video Tutorial</h1>
+<video controls width="600" height="400">
+    <source src="../images/UserGuide.mp4" type="video/mp4">
+</video></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Files - Curriculum Info Application</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">Curriculum Info Application</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../userguide/" class="nav-link">User-Guide</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Files</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../userguide/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#files" class="nav-link">Files</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#homecontrollercs" class="nav-link">HomeController.cs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exportcontrollercs" class="nav-link">ExportController.cs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#logincontrollercs" class="nav-link">LoginController.cs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#transactioncontrollercs" class="nav-link">TransactionController.cs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="files">Files</h1>
+<hr class="solid">
+
+<h2 id="homecontrollercs">HomeController.cs</h2>
+<h3 id="import">Import()</h3>
+<p><strong>Description:</strong> Runs DeleteIfFileExist() to delete XML files if they already exist.<br/>
+<strong>Return Type:</strong> IActionResults<br/></p>
+<h3 id="processimportlist-files">ProcessImport(List<IFormFile> files)<br/></h3>
+<p><strong>Description:</strong> Processes the uploaded files, reads CSV or Excel files, saves data to XML, and updates transaction information.<br/>
+<strong>Parameters:</strong>
+List<IFormFile> files: List of uploaded files.<br/></p>
+<h3 id="readcsvasynciformfile-file">ReadCsvAsync(IFormFile file)<br/></h3>
+<p><strong>Description:</strong> Reads data from the uploaded CSV file asynchronously and returns a list of records.<br/>
+<strong>Parameters:</strong>
+IFormFile file: Uploaded CSV file.<br/></p>
+<h3 id="readexcelasynciformfile-file">ReadExcelAsync(IFormFile file)<br/></h3>
+<p><strong>Description:</strong> Reads data from the uploaded Excel file asynchronously and returns a list of records.<br/>
+<strong>Parameters:</strong>
+IFormFile file: Uploaded Excel file.<br/></p>
+<h3 id="savedatatoxmlasynclist-records-int-i">SaveDataToXmlAsync(List<List\<string>> records, int i)<br/></h3>
+<p><strong>Description:</strong> Saves the provided data records to an XML file asynchronously.<br/>
+<strong>Parameters:</strong>
+List<List\<string>> records: List of data records.
+int i: Index for naming the XML file.<br/></p>
+<h3 id="jointablesstring-selectedcolumn1-string-selectedcolumn2-string-selectedcolumn3-string-selectedcolumn4-string-jointype">JoinTables(string selectedColumn1, string selectedColumn2, string selectedColumn3, string selectedColumn4, string joinType)<br/></h3>
+<p><strong>Description:</strong> Joins XML data based on specified columns and join type, processes XML, and saves to a new XML file.<br/>
+<strong>Parameters:</strong><br/>
+string selectedColumn1: First selected column for the join.<br/>
+string selectedColumn2: Second selected column for the join.<br/>
+string selectedColumn3: Third selected column for the join (optional).<br/>
+string selectedColumn4: Fourth selected column for the join (optional).<br/>
+string joinType: Type of join (InnerJoin, LeftJoin, RightJoin, FullJoin, AntiJoin).<br/></p>
+<h3 id="getfilesizestring-filepath">GetFileSize(string filePath)<br/></h3>
+<p><strong>Description:</strong> Gets the size of the specified file.<br/>
+<strong>Parameters:</strong>
+string filePath: Path of the file.<br/></p>
+<h3 id="processxmlienumerable-joineddata">ProcessXml(IEnumerable<XElement> joinedData)<br/></h3>
+<p><strong>Description:</strong> Processes XML data, adds numerical suffixes to duplicate element names, and returns the processed XML.<br/>
+<strong>Parameters:</strong>
+IEnumerable<XElement> joinedData: Joined XML data.<br/></p>
+<h3 id="deleteiffileexistsstring-filepath">DeleteIfFileExists(string filePath)<br/></h3>
+<p><strong>Description:</strong> Deletes the specified file if it exists.<br/>
+<strong>Parameters:</strong>
+string filePath: Path of the file.<br/></p>
+<h3 id="export">Export()<br/></h3>
+<p><strong>Description:</strong> Redirects to the "Export" page.<br/></p>
+<h3 id="user">User()<br/></h3>
+<p><strong>Description:</strong> Redirects to the "Login" page.<br/></p>
+<h3 id="index">Index()<br/></h3>
+<p><strong>Description:</strong> Displays the "Import" page or the "Index" page based on the login status.<br/></p>
+<h3 id="logout">Logout()<br/></h3>
+<p><strong>Description:</strong> Deletes the login file and redirects to the "Index" page.<br/></p>
+<h3 id="signup">Signup()<br/></h3>
+<p><strong>Description:</strong> Displays the "Signup" page.<br/></p>
+<h3 id="dashboard">Dashboard()<br/></h3>
+<p><strong>Description:</strong> Displays the "Dashboard" page, showing transaction history if logged in.<br/></p>
+<hr class="solid">
+
+<h2 id="exportcontrollercs">ExportController.cs</h2>
+<h3 id="indexint-page-string-filters">Index(int? page, string? filters)<br/></h3>
+<p><strong>Description:</strong> Displays the "Export" page, loads data from the joined XML file, applies pagination and filtering, and shows the data on the page.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>int? page</code>: Current page number (optional).<br/>
+- <code>string? filters</code>: JSON-formatted filters for data (optional).<br/></p>
+<h3 id="exporttocsvstring-selectedcolumns-string-filters">ExportToCsv(string selectedColumns, string filters)<br/></h3>
+<p><strong>Description:</strong> Exports selected columns of data to a CSV file based on provided filters.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>string selectedColumns</code>: Comma-separated list of selected column names.<br/>
+- <code>string filters</code>: JSON-formatted filters for data.<br/></p>
+<h3 id="matchesfiltersxelement-record-dictionary-filters">MatchesFilters(XElement record, Dictionary<string, string>? filters)<br/></h3>
+<p><strong>Description:</strong> Checks if the given XML record matches the provided filters.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>XElement record</code>: XML record to check.<br/>
+- <code>Dictionary&lt;string, string&gt;? filters</code>: Filters for the record.<br/></p>
+<hr class="solid">
+
+<h2 id="logincontrollercs">LoginController.cs</h2>
+<h3 id="index_1">Index()<br/></h3>
+<p><strong>Description:</strong> Displays the "User" page, loads user data from a JSON file, and shows user information on the page.<br/></p>
+<h3 id="deleteuserstring-email">DeleteUser(string email)<br/></h3>
+<p><strong>Description:</strong> Deletes a user with the specified email and redirects to the "Index" page.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>string email</code>: Email of the user to be deleted.<br/></p>
+<h3 id="toggleadminstatusstring-email">ToggleAdminStatus(string email)<br/></h3>
+<p><strong>Description:</strong> Toggles the admin status of a user with the specified email and redirects to the "Index" page.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>string email</code>: Email of the user to toggle admin status.<br/></p>
+<h3 id="getuserlist">GetUserList()<br/></h3>
+<p><strong>Description:</strong> Reads user data from a JSON file and returns a list of <code>LoginModel</code> objects.<br/></p>
+<p><strong>Return Type:</strong> List<LoginModel><br/></p>
+<h3 id="toggleadminstatusbyemailstring-email">ToggleAdminStatusByEmail(string email)<br/></h3>
+<p><strong>Description:</strong> Toggles the admin status of a user with the specified email and updates the JSON file.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>string email</code>: Email of the user to toggle admin status.<br/></p>
+<h3 id="loginloginmodel-model">Login(LoginModel model)<br/></h3>
+<p><strong>Description:</strong> Processes user login, checks credentials, and redirects to the "Import" page if successful.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>LoginModel model</code>: User login credentials.<br/></p>
+<h3 id="signuploginmodel-model">Signup(LoginModel model)<br/></h3>
+<p><strong>Description:</strong> Processes user registration, inserts a new user, and redirects to the "Index" page.<br/></p>
+<p><strong>Parameters:</strong><br/>
+- <code>LoginModel model</code>: User registration data.<br/></p>
+<hr class="solid">
+
+<h2 id="transactioncontrollercs">TransactionController.cs</h2>
+<h3 id="index_2">Index()<br/></h3>
+<p><strong>Description:</strong> Deletes old transactions and displays the dashboard page with transaction history.<br/></p>
+<h3 id="importdurationmatrix">ImportDurationMatrix()<br/></h3>
+<p><strong>Description:</strong> Reads transaction data from JSON, processes data for the Import Duration Matrix chart, and returns the chart data as JSON.<br/></p>
+<p><strong>Return Type:</strong> JsonResult<br/></p>
+<h3 id="importratebyfiletype">ImportRateByFileType()<br/></h3>
+<p><strong>Description:</strong> Reads transaction data from JSON, processes data for the Import Rate by File Type Pie Chart, and returns the chart data as JSON.<br/></p>
+<p><strong>Return Type:</strong> JsonResult<br/></p>
+<h3 id="loaduserusage">LoadUserUsage()<br/></h3>
+<p><strong>Description:</strong> Reads transaction data from JSON, processes data for user usage, and returns the chart data as JSON.<br/></p>
+<p><strong>Return Type:</strong> JsonResult<br/></p>
+<h3 id="readtransactiondatafromjson">ReadTransactionDataFromJson()<br/></h3>
+<p><strong>Description:</strong> Reads transaction data from the JSON file and deserializes it into a list of <code>Transaction</code> objects.<br/></p>
+<p><strong>Return Type:</strong> List<Transaction><br/></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
